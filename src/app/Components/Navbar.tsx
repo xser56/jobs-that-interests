@@ -1,18 +1,21 @@
+"use client"
+
+import { useRouter } from 'next/navigation';
+
 import React from "react";
 import Link from "next/link";
 
 const Navbar = () => {
+      const router = useRouter();
+  
   return (
     <nav className=" bg-white/10 backdrop-blur-md shadow-md">
       <div className="max-w-7xl mx-20 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <div className="flex-shrink-0 text-xl font-bold">Job Interest</div>
+          <div className="flex-shrink-0 text-xl font-bold cursor-pointer text-white hover:text-blue-300" onClick={() => router.push("/")}>Job Interest</div>
           <div className="hidden md:flex space-x-6">
-            <Link href="/" className="text-gray-700 hover:text-blue-500">
-              Home
-            </Link>
             <div className="relative group">
-              <button className="text-gray-700 hover:text-blue-500 focus:outline-none">
+              <button className="text-white hover:text-blue-300 focus:outline-none">
                 Jobs
               </button>
 

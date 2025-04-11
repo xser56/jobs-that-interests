@@ -5,25 +5,41 @@ import JobSelect from './Components/JobSelect'
 
 const page = () => {
   return (
-    <div className='text-white  min-h-screen 
+    <div className='  min-h-screen 
     bg-[url("/assets/backgroundMain.png")] bg-cover font-sans'>
     <Navbar/>
     <div className=''>
 
-      <main className=''>
+      <main className='text-slate-400 font-serif'>
 
-      <h1 className='text-3xl mb-10 mt-10 ps-10'>Five Companies i'd like to work at</h1>
+      <h1 className='text-3xl mb-10 mt-10 ps-10 font-semibold '> Five Companies I Would Like To Work At   :</h1>
+      <p className='absolute left-10'>
+        (Not in any particler order)
+        </p>
       {/* Job Grid Section */}
       <div className='flex justify-center'>
 
-      <section className='grid grid-cols-3 w-[800px] gap-5'>
-      <JobSelect/>
-      <JobSelect/>
-      <JobSelect/>
-      <JobSelect/>
-      <JobSelect/>
-      <div className='bg-blue-900'>
-        {/* Info Here */}
+      <section className='grid grid-cols-3  gap-5 object-contain '>
+      <JobSelect baseImage={'/assets/jobCards/pocketpair.jpg'} hoverLogo={'/assets/jobCards/pocketpairlogo.png'} route={'/pocket-pair'}/>
+      <JobSelect baseImage={'/assets/jobCards/steam.jpg'} hoverLogo={'/assets/jobCards/steamlogo.png'} route={'/Job-2'} />
+      <JobSelect baseImage={'/assets/jobCards/gearboxlogo1.png'} hoverLogo={'/assets/jobCards/gearboxlogo.png'} route={'/Job-3'}/>
+      <JobSelect baseImage={'/assets/jobCards/images.png'} hoverLogo={'/assets/jobCards/codestacklogo.png'} route={'/Job-4'} />
+      <JobSelect baseImage={'/assets/jobCards/google-2.avif'} hoverLogo={'/assets/jobCards/googlelogo2.png'} route={'/Job-5'} />
+      
+      <div className='bg-stone-400/30 font-sans  rounded-2xl text-2xl border-1 ps-3 text-red-200 pt-10'>
+        <h1 className='flex justify-center pb-2 font-semibold'>
+        Other Considerations
+        </h1>
+        <div className='ps-8 '>
+          <li>Nvidia
+          </li>
+          <li>Capcom</li>
+          <li>Kehe</li>
+          <li>Youtube</li>
+          <li>Discord </li>
+        </div>
+          
+
       </div>
       </section>
       </div>
