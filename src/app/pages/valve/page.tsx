@@ -50,7 +50,7 @@ const page = () => {
           ]}
           location="Bellevue, Washington (On or Off Site)"
 
-          currentSkills={true}
+          currentSkills={false}
 
           goalsToAchieve={[
             'Work in a professional envoirnment with long standing individuals in the industry',
