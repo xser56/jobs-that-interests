@@ -39,7 +39,6 @@ export default function JobCards({
   benifits,
   location,
   currentStack,
-  currentSkills,
   companyHyperLink,
   companyHyperLinkText,
   bgColor,

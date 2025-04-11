@@ -1,4 +1,3 @@
-import { DropdownMenu } from '@radix-ui/react-dropdown-menu'
 import React from 'react'
 import Navbar from './Components/Navbar'
 import JobSelect from './Components/JobSelect'
