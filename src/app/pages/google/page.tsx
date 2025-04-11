@@ -5,7 +5,7 @@ import React from 'react';
 const page = () => {
   const description = "Google is a global leader in technology, known for creating transformative tools and platforms such as Search, Android, Gmail, and Chrome. Beyond products, Google is driven by a mission to organize the world’s information and make it universally accessible and useful. The company thrives on cutting-edge research, open-source collaboration, and engineering at scale — across web, mobile, cloud, and AI.";
 
-  const whyChose = "I chose Google because of its unmatched scale, innovation-first culture, and deep emphasis on solving global problems through elegant engineering. I admire the company’s commitment to developer empowerment, ethical AI, and building tools that truly make a difference. Joining Google would mean growing alongside some of the most passionate engineers on the planet while contributing to technology that billions rely on daily.";
+  const whyChose = "I picked Google because they build things that pretty much the whole world uses, and they do it in a way that pushes boundaries. I really respect how they give developers room to grow and work on stuff that actually matters. The idea of being part of a team that's solving huge real-world problems with code and doing it at a massive scale is super exciting to me. They are one of the leading brands in technology, and I would like to be apart of that future!";
 
   return (
     <div>
@@ -15,7 +15,7 @@ const page = () => {
         <JobCards
           companyName="Google"
           companyHyperLink="https://careers.google.com/"
-          companyHyperLinkText="Official Site"
+          companyHyperLinkText="Job Site"
 
           bgColor="bg-white/10"
           bgMain="bg-[url('/assets/googlebg.jpg')]"
@@ -34,10 +34,8 @@ const page = () => {
           ]}
           currentStack={[
             'TypeScript / React / Next.js',
-            'Tailwind / CSS-in-JS',
-            'Node.js / Express',
-            'Python / FastAPI / Flask',
-            'PostgreSQL / MongoDB / Firebase',
+            'Tailwind / CSS',
+            'Node.js / C#/ Sql'
           ]}
           culture={[
             'User-first product mindset',
@@ -54,7 +52,7 @@ const page = () => {
           ]}
           location="Mountain View, CA (Global Offices & Remote)"
 
-          currentSkills={true}
+          currentSkills={false}
 
           goalsToAchieve={[
             'Build performant, inclusive web applications',

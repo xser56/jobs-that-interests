@@ -6,9 +6,9 @@ import React from 'react'
 const page = () => {
   
   // text blocks
-  const description = "Pocketpair is a leading indie game development company in Japan, attracting attention from game companies worldwide. We have repeatedly achieved top rank in global sales on Steam. While maintaining a thorough customer-centric approach, we value our developers and create games that are well-received in the global market. Adopting a development structure in line with the times, we deliver unique games worldwide."
+  const description = "CodeStack Academy is Stockton’s first immersive and accelerated code school offered by the San Joaquin County Office of Education. As a non-profit, our $5,000 tuition is a fraction of the cost comparable to for-profit code schools. Our academy prepares you for the workforce by teaching you the latest technologies including HTML5, CSS3, JavaScript, React, Angular, SQL Server, C#, Cloud Services, DevOps, Mobile App Development & more."
 
-  const whyChose = "I chose Pocketpair as one of my options because I personally enjoyed a couple of their releases. My ultimate goal is to learn game development and be apart of any projects. The work culture and environment from what I seen is very chill and laidback. The company seems to value their employees and consideres them not as just workers, but actual human beings. Hopefully I can work there before they get sued into oblivian by Nintendo!"
+  const whyChose = "I put CodeStack Acedemy up in my job interest because I like what they're doing within the community. Im not really too sure what the actual CodeStack Dev team does at this moment, but fom what I experienced with the Acedemy I enjoy the dynamic and enthusiasm of the instructors. I can tell there is genuine passion and will to teach and I appreciate that! I'm not sure about being an instructer but I wouldn't mine starting off my coding career with CodeStack!"
 
   return (
     <div>
@@ -16,12 +16,12 @@ const page = () => {
       <div className='font-mono'>
 
       <JobCards
-          companyName="Pocketpair"
-          companyHyperLink="https://www.pocketpair.jp/jobs"
+          companyName="CodeStack"
+          companyHyperLink="https://codestackacademy.org/our-academy"
           companyHyperLinkText="Official Site"
 
           bgColor="bg-slate-100/25"
-          bgText="text-amber-300"
+          bgText="text-amber-500"
           bgMain="bg-[url('/assets/codestackbg.webp')]"
           textColor={'text-white'}
 
@@ -29,23 +29,23 @@ const page = () => {
           whyChose={whyChose}
 
           workStack={[
-            'Unity / Unreal Engine',
-            'C# / C++',
-            'Node.js',
+            'JavaScript / Next.Js / React',
+            'C# Backend / Node.js',
+            'Tailwind, Bootstrap'
           ]}
           currentStack={[
-            'React / Next.js',
-            'TypeScript / Tailwind CSS',
-            'C# Backend / JavaScript',
+            'JavaScript / Next.Js /React',
+            'C# Backend / Node.js',
+            'Tailwind, Bootstrap'
           ]}
-          culture={['Playful', 'Collaborative', 'Chill']}
-          benifits={['Remote-friendly', 'Creative freedom', 'New IP development']}
-          location={'Tokyo, Japan (Remote Friendly)'}
+          culture={['Honest', 'Collaborative', 'Chill']}
+          benifits={['N/A']}
+          location={'Stockon, California (Hybrid)'}
           currentSkills={true}
           goalsToAchieve={[
-            'Contribute to ongoing games that I enjoy from them',
-            'A deeper dive into game engines for development',
-            'Be apart of team of new and fresh programmers',
+            'Contribute to a community of enthusiastic young Web developers',
+            'Further develop my skills in Full stack application development',
+            'Be apart of a team of like minded indivduals',
           ]}
 
           exampleImages={[

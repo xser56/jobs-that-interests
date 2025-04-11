@@ -3,7 +3,6 @@
 import { useRouter } from 'next/navigation';
 
 import React from "react";
-import Link from "next/link";
 
 const Navbar = () => {
       const router = useRouter();
@@ -15,47 +14,7 @@ const Navbar = () => {
           <div className="flex-shrink-0 text-xl font-bold cursor-pointer text-white hover:text-blue-300" onClick={() => router.push("/")}>Job Interest</div>
           <div className="hidden md:flex space-x-6">
             <div className="relative group">
-              <button className="text-white hover:text-blue-300 focus:outline-none">
-                Jobs
-              </button>
-
-              {/* Drop Down */}
-              <ul
-                className="absolute mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg 
-                  opacity-0 invisible group-hover:opacity-100 group-hover:visible 
-                  transition-opacity duration-200 z-50"
-              >
-                <Link
-                  href="/job-1"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Developer
-                </Link>
-                <Link
-                  href="/job-2"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Designer
-                </Link>
-                <Link
-                  href="/job-3"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Marketing
-                </Link>
-                <Link
-                  href="/job-4"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Sales
-                </Link>
-                <Link
-                  href="/job-5"
-                  className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                >
-                  Support
-                </Link>
-              </ul>
+                           
             </div>
           </div>
         </div>

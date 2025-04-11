@@ -25,7 +25,7 @@ const page = () => {
       <JobSelect baseImage={'/assets/jobCards/images.png'} hoverLogo={'/assets/jobCards/codestacklogo.png'} route={'pages/codestack'} />
       <JobSelect baseImage={'/assets/jobCards/google-2.avif'} hoverLogo={'/assets/jobCards/googlelogo2.png'} route={'pages/google'} />
       
-      <div className='bg-stone-400/30 font-sans  rounded-2xl text-2xl border-1 ps-3 text-red-200 pt-10'>
+      <div className='bg-stone-400/30 font-sans  rounded-2xl text-2xl border-1 ps-3 text-slate-200 pt-10'>
         <h1 className='flex justify-center pb-2 font-semibold'>
         Other Considerations
         </h1>

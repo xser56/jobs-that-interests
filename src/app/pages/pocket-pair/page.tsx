@@ -8,7 +8,7 @@ const page = () => {
   // text blocks
   const description = "Pocketpair is a leading indie game development company in Japan, attracting attention from game companies worldwide. We have repeatedly achieved top rank in global sales on Steam. While maintaining a thorough customer-centric approach, we value our developers and create games that are well-received in the global market. Adopting a development structure in line with the times, we deliver unique games worldwide."
 
-  const whyChose = "I chose Pocketpair as one of my options because I personally enjoyed a couple of their releases. My ultimate goal is to learn game development and be apart of any projects. The work culture and environment from what I seen is very chill and laidback. The company seems to value their employees and consideres them not as just workers, but actual human beings. Hopefully I can work there before they get sued into oblivian by Nintendo!"
+  const whyChose = "I chose Pocketpair as one of my options because I personally enjoyed a couple of their releases. My ultimate goal is to learn game development and be apart of any projects. The work culture and environment from what I seen is very chill and laidback. The company seems to value their employees and consideres them not as just workers, but actual human beings. Hopefully I can work there before they get sued into oblivion by Nintendo!"
 
   return (
     <div>

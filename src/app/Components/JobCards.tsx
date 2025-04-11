@@ -9,11 +9,10 @@ interface Props {
   description: string;
   whyChose: string;
 
-  bgMain: string; 
+  bgMain: string;
   bgColor: string;
   bgText: string;
   textColor: string;
-
 
   workStack: string[];
   currentStack: string[];
@@ -44,15 +43,18 @@ export default function JobCards({
   bgColor,
   bgMain,
   bgText,
-  textColor
+  currentSkills,
+  textColor,
 }: Props) {
   return (
-<main className={`min-h-screen ${bgText} p-6 ${bgMain} bg-cover bg-center bg-no-repeat border-black border-4`}>
-<div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <main
+      className={`min-h-screen ${bgText} p-6 ${bgMain} bg-cover bg-center bg-no-repeat border-black border-4`}
+    >
+      <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Left Side */}
         <div className="space-y-6">
           {/* Company Info */}
-          <section className={`${bgColor} p-6 rounded-xl shadow-lg`}>
+          <section className={`${bgColor} p-6 rounded-xl shadow-lg h-[400px]`}>
             <h2 className="text-2xl font-bold mb-2">
               {companyName}
               <a
@@ -81,12 +83,16 @@ export default function JobCards({
           </section>
 
           {/* Culture / Benefits / Location */}
-          <section className={` ${bgColor} p-6 rounded-xl shadow-lg grid grid-cols-1 sm:grid-cols-3 gap-4 text-center`}>
+          <section
+            className={` ${bgColor} p-6 rounded-xl shadow-lg grid grid-cols-1 sm:grid-cols-3 gap-4 text-center`}
+          >
             <div>
               <h3 className="font-semibold  mb-1">Culture</h3>
               <div className="text-sm text-gray-300">
                 {
-                  <ul className={`list-disc list-inside space-y-1 text-sm ${textColor}`}>
+                  <ul
+                    className={`list-disc list-inside space-y-1 text-sm ${textColor}`}
+                  >
                     {culture.map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -98,7 +104,9 @@ export default function JobCards({
               <h3 className="font-semibold  mb-1">Benefits</h3>
               <p className="text-sm text-gray-300">
                 {
-                  <ul className={`list-disc list-inside space-y-1 text-sm ${textColor}`}>
+                  <ul
+                    className={`list-disc list-inside space-y-1 text-sm ${textColor}`}
+                  >
                     {benifits.map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -113,11 +121,15 @@ export default function JobCards({
           </section>
 
           {/* Goals */}
-          <section className={`${bgColor} p-6 rounded-xl shadow-lg `}>
+          <section
+            className={`${bgColor} p-6 rounded-xl shadow-lg max-h-[200px]`}
+          >
             <h3 className="font-semibold  mb-2">Goals to Achieve</h3>
             <p className="text-sm text-gray-300">
               {
-                <ul className={`list-disc list-inside space-y-1 text-sm ${textColor}`}>
+                <ul
+                  className={`list-disc list-inside space-y-1 text-sm ${textColor}`}
+                >
                   {goalsToAchieve.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}
@@ -130,12 +142,16 @@ export default function JobCards({
         {/* Right Side */}
         <div className="space-y-6">
           {/* Stack & Skills */}
-          <section className={`${bgColor} p-6 rounded-xl shadow-lg grid grid-cols-1 sm:grid-cols-2 gap-4 text-center`}>
+          <section
+            className={`${bgColor} p-6 rounded-xl shadow-lg grid grid-cols-1 sm:grid-cols-2 gap-4 text-center max-h-[200px]`}
+          >
             <div>
               <h4 className="font-semibold  mb-1">Work Stack</h4>
               <p className="text-sm text-gray-300">
                 {
-                  <ul className="list-disc list-inside space-y-1 text-sm text-gray-300">
+                  <ul
+                    className={`${textColor} list-disc list-inside space-y-1 text-sm text-gray-300`}
+                  >
                     {workStack.map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -147,7 +163,9 @@ export default function JobCards({
               <h4 className="font-semibold  mb-1">Current Skills</h4>
               <p className="text-sm text-gray-300">
                 {
-                  <ul className="list-disc list-inside space-y-1 text-sm text-gray-300">
+                  <ul
+                    className={`${textColor}  list-disc list-inside space-y-1 text-sm text-gray-300`}
+                  >
                     {currentStack.map((item, index) => (
                       <li key={index}>{item}</li>
                     ))}
@@ -158,15 +176,19 @@ export default function JobCards({
           </section>
 
           {/* Skill Check */}
-          <section className={`${bgColor} p-6 rounded-xl shadow-lg text-center`}>
+          <section
+            className={`${bgColor} p-6 rounded-xl shadow-lg text-center max-h-[100px]`}
+          >
             <h1>Do I have the Skills To work here?</h1>
-            <p>{!workStack || workStack ? "Yes" : "No" }</p>
+            <p className={`${textColor}`}>{currentSkills ? "Yes" : "No"}</p>
           </section>
 
           {/* Images */}
-          <section className={`${bgColor} p-6 rounded-xl shadow-lg text-center`}>
+          <section
+            className={`${bgColor} p-6 rounded-xl shadow-lg text-center h-[454px]`}
+          >
             <h3 className="text-lg font-semibold mb-4  text-center">
-              Works
+              Works and Enviornment
             </h3>
             <div className="grid grid-cols-2 gap-4">
               {exampleImages.map((src, index) => (

@@ -5,7 +5,7 @@ import React from 'react';
 const page = () => {
   const description = "Gearbox Software is a Texas-based game development company known for iconic titles like Borderlands, Brothers in Arms, and publishing partnerships on hit titles. Their studio thrives on bold storytelling, wild creativity, and deeply engaging gameplay. Gearbox blends technical mastery with irreverent humor and is known for pushing creative boundaries within stylized, high-energy worlds.";
 
-  const whyChose = "I chose Gearbox because of their fearless creative direction and ability to build worlds that feel alive, chaotic, and endlessly fun. I’ve always admired how Gearbox blends story and gameplay seamlessly. The idea of contributing to a studio that embraces personality, humor, and cutting-edge design makes Gearbox a dream team to be part of.";
+  const whyChose = "I chose Gearbox because of their fearless creative direction and ability to build worlds that feel alive, chaotic, and endlessly fun. Borderlands is one of my favorite gaming fracnhises and its a game that I would drop evertyhing to work on. I’ve always admired how Gearbox kinda just does what they want and says what they want (especially their CEO). If I could get in on the gaming industry, this is a place I would totally consider working at first.";
 
   return (
     <div>
@@ -14,8 +14,8 @@ const page = () => {
 
         <JobCards
           companyName="Gearbox Software"
-          companyHyperLink="https://www.gearboxsoftware.com/"
-          companyHyperLinkText="Official Site"
+          companyHyperLink="https://www.gearboxsoftware.com/careers/"
+          companyHyperLinkText="Job Site"
 
           bgColor="bg-black/40"
           bgMain="bg-[url('/assets/jobCards/gearbobg.avif')]"
@@ -30,19 +30,15 @@ const page = () => {
             'C++ / Blueprints',
             'Custom Gearbox tools',
             'Visual Scripting',
-            'Git / Perforce',
           ]}
           currentStack={[
             'JavaScript / TypeScript',
             'React / Tailwind',
-            'Blender / Maya (basic)',
-            'Node.js tooling',
+            'Node.js / C#',
           ]}
           culture={[
-            'Creative freedom',
             'Bold storytelling',
             'Humor-driven culture',
-            'Collaborative spirit',
             'Stylized design focus',
           ]}
           benifits={[
@@ -53,12 +49,12 @@ const page = () => {
           ]}
           location="Frisco, Texas (On-site, Hybrid, or Remote)"
 
-          currentSkills={true}
+          currentSkills={false}
 
           goalsToAchieve={[
-            'Contribute to a co-op action title',
-            'Deepen Unreal Engine expertise',
-            'Design systems that enhance story and gameplay',
+            'Contribute to the Borderlands Series',
+            'Learn and develop in Unreal Engine',
+            'Work and understand fun and immersive game design',
           ]}
 
           exampleImages={[
