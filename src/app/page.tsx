@@ -12,7 +12,7 @@ const page = () => {
 
       <main className='text-slate-400 font-serif'>
 
-      <h1 className='text-3xl mb-10 mt-10 ps-10 font-semibold '> Five Companies I Would Like To Work At   :</h1>
+      <h1 className='text-3xl mb-10 mt-10 ps-10 font-light '> Five Companies I Would Like To Work At   :</h1>
       <p className='absolute left-10'>
         (Not in any particler order)
         </p>
@@ -20,11 +20,11 @@ const page = () => {
       <div className='flex justify-center'>
 
       <section className='grid grid-cols-3  gap-5 object-contain '>
-      <JobSelect baseImage={'/assets/jobCards/pocketpair.jpg'} hoverLogo={'/assets/jobCards/pocketpairlogo.png'} route={'/pocket-pair'}/>
-      <JobSelect baseImage={'/assets/jobCards/steam.jpg'} hoverLogo={'/assets/jobCards/steamlogo.png'} route={'/Job-2'} />
-      <JobSelect baseImage={'/assets/jobCards/gearboxlogo1.png'} hoverLogo={'/assets/jobCards/gearboxlogo.png'} route={'/Job-3'}/>
-      <JobSelect baseImage={'/assets/jobCards/images.png'} hoverLogo={'/assets/jobCards/codestacklogo.png'} route={'/Job-4'} />
-      <JobSelect baseImage={'/assets/jobCards/google-2.avif'} hoverLogo={'/assets/jobCards/googlelogo2.png'} route={'/Job-5'} />
+      <JobSelect baseImage={'/assets/jobCards/pocketpair.jpg'} hoverLogo={'/assets/jobCards/pocketpairlogo.png'} route={'/pages/pocket-pair'}/>
+      <JobSelect baseImage={'/assets/jobCards/steam.jpg'} hoverLogo={'/assets/jobCards/steamlogo.png'} route={'/pages/valve'} />
+      <JobSelect baseImage={'/assets/jobCards/gearboxlogo1.png'} hoverLogo={'/assets/jobCards/gearboxlogo.png'} route={'pages/gearbox'}/>
+      <JobSelect baseImage={'/assets/jobCards/images.png'} hoverLogo={'/assets/jobCards/codestacklogo.png'} route={'pages/codestack'} />
+      <JobSelect baseImage={'/assets/jobCards/google-2.avif'} hoverLogo={'/assets/jobCards/googlelogo2.png'} route={'pages/google'} />
       
       <div className='bg-stone-400/30 font-sans  rounded-2xl text-2xl border-1 ps-3 text-red-200 pt-10'>
         <h1 className='flex justify-center pb-2 font-semibold'>
